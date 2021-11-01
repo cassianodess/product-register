@@ -1,0 +1,22 @@
+<ul>
+  <li *ngFor="let product of products">
+    <mat-card-content class="card mat-elevation-z3">
+      <div class="items">
+        <mat-card-subtitle class="subtitle">
+          Id: {{product.id}}
+        </mat-card-subtitle>
+        <mat-card-subtitle class="subtitle">
+          Name: {{product.name}}
+        </mat-card-subtitle>
+        <mat-card-subtitle class="subtitle">
+          Price: R${{product.price}}
+        </mat-card-subtitle>
+      </div>
+      <div class="icons">
+        <button mat-fab color="primary"><i class="material-icons"
+            routerLink="/products/update/{{product.id}}">edit</i></button>
+        <button mat-fab color="warn"><i class="material-icons" (click)="deleteProduct(product.id)">delete</i></button>
+      </div>
+    </mat-card-content>
+  </li>
+</ul>
