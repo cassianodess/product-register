@@ -1,2 +1,4 @@
-# product-register
-Project to improve Angular Skills
+# Product-register
+Project to improve Angular Skills.
+* Backend in Node
+* Frontend in Angular
